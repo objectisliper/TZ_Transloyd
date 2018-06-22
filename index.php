@@ -90,7 +90,7 @@ $(function(){
                   var cloneurl     = repositories[index].clone_url;
                   var outrepo = '<h2>'+repofullname+' <span class="smallname">(@<a href="'+repourl+'" target="_blank">'+reponame+'</a>)</span></h2>';
                     outrepo = outrepo + '<div class="ghcontent"><div class="avi"><a href="'+profileurl+'" target="_blank"><img src="'+aviurl+'" width="80" height="80" alt="'+username+'"></a></div>';
-                    outrepo = outrepo + '<p>'+language+' - language; '+issues+' - issues;<br>forks count:'+forks+'</p><br>';
+                    outrepo = outrepo + '<p>'+language+' - language; '+issues+' - issues;<br>forks count:'+forks+'<br>'+repocreatedate+'</p><br>';
                   var repocontenturl  = 'https://api.github.com/repos/'+username+'/'+reponame+'/contents/README.md'
                   
                     
