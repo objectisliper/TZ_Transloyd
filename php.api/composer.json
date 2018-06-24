@@ -1,0 +1,9 @@
+{
+    "require": {
+        "php-http/curl-client": "^1.7",
+        "phyrexia/http": "^2.6",
+        "knplabs/github-api": "^2.8",
+        "php-http/guzzle6-adapter": "^1.1",
+        "lcobucci/jwt": "^3.2"
+    }
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Github API Webapp using jQuery - Treehouse Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  <link rel="shortcut icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+  <link rel="icon" href="http://d15dxvojnvxp1x.cloudfront.net/assets/favicon.ico">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="js/GitApi.js"></script>
+</head>
+
+<body>
+  <div id="w">
+    <h1>Simple Github API Webapp</h1>
+    <p>Enter a single Github username below and click the button to display profile info via JSON.</p>
+    
+    <input type="text" name="ghusername" id="ghusername" placeholder="Github username...">
+    
+    <a href="#" id="ghsubmitbtn">Pull User Data</a>
+    
+    <div id="ghapidata" class="clearfix"></div>
+    <div id="ghapirepo" class="clearfix"></div>
+  </div>
+<script type="text/javascript">
+	$('#ghsubmitbtn').on('click', apigit);
+	 $('#ghusername').keydown(function(e){ 
+	  if (e.keyCode == 13) { 
+	    apigit();
+	  }
+	});
+</script>
+</body>
+</html>

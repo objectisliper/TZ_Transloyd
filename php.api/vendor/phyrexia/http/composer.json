@@ -1,0 +1,21 @@
+{
+	"name": "phyrexia/http",
+	"type": "library",
+	"description": "PHP PSR-7 compatible HTTP client (using cURL)",
+	"keywords": ["http", "client", "request", "response"],
+	"authors": [{"name": "Jérémy 'Jejem' Desvages", "email": "jejem@phyrexia.org"}],
+	"license": "MIT",
+	"version": "2.6.1",
+	"require": {
+		"php": ">=5.3",
+		"ext-curl": "*",
+		"psr/http-message": "^1.0",
+		"guzzlehttp/psr7": "^1.0"
+	},
+	"provide": {
+		"psr/http-message-implementation": "1.0"
+	},
+	"autoload": {
+		"psr-4": {"Phyrexia\\Http\\": "src/"}
+	}
+}
